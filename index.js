@@ -7,7 +7,14 @@ const port = process.env.PORT || 5000;
 
 // midleware
 
-app.use(cors())
+app.use(cors({
+  origin:[
+    // 'http://localhost:5174'
+    'https://auth-integation-private-route.web.app',
+    'https://auth-integation-private-route.firebaseapp.com'
+  ],
+  credentials:true
+}))
 app.use(express.json());
 // console.log(process.env.DB_PASS)
 
