@@ -9,9 +9,8 @@ const port = process.env.PORT || 5000;
 
 app.use(cors({
   origin:[
-    // 'http://localhost:5174'
-    'https://auth-integation-private-route.web.app',
-    'https://auth-integation-private-route.firebaseapp.com'
+    'http://localhost:5174'
+    
   ],
   credentials:true
 }))
